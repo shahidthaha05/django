@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/sample.css' %}">
+
     <style>
         table{
             width: 500px;
@@ -35,6 +38,11 @@
             <td>{{i.name}}</td>
             <td>{{i.age}}</td>
             <td>{{i.email}}</td>
+            <td>
+                <a href="edit_user/{{i.id}}">Edit</a>
+                <a href="delete_user/{{i.id}}">Delete</a>
+            </td>
+            
         </tr>
         {% endfor %}
     </table>
