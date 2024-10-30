@@ -15,5 +15,9 @@ urlpatterns=[
     path('user_reg',views.user_reg),
     path('edit_user/<id>',views.edit_user),
     path('delete_user/<id>',views.delete_user),
-    path('dis_std',views.display_std)
+    path('dis_std',views.display_std),
+    path('add_std',views.add_std),
+    path('edit_std/<id>',views.edit_std),
+    path('delete_std/<id>',views.delete_std)
+
 ]
